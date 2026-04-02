@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IKnead Massage | Swedish & Deep Tissue Massage in Pelham, AL</title>
+
+  <meta name="description" content="IKnead Massage is a licensed massage spa serving Pelham and Birmingham, AL since 2014. Swedish and deep tissue massage, plus hot stone therapy and table shower upon request. Appointment only — call (205) 490-6338." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IKnead Massage | Swedish & Deep Tissue Massage in Pelham, AL" />
+  <meta property="og:description" content="Licensed massage spa serving Pelham and Birmingham since 2014. Swedish and deep tissue massage. Appointment only — call (205) 490-6338." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --accent:#0f766e;
+      --accent2:#115e59;
+      --card:#f9fafb;
+      --radius:14px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      padding:28px 0 18px;
+      border-bottom:1px solid var(--border);
+    }
+    .brand{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+      flex-wrap:wrap;
+    }
+    .brand h1{
+      margin:0;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing:-0.02em;
+    }
+    .tagline{margin:6px 0 0; color:var(--muted); max-width:62ch}
+    .cta{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 14px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid var(--border);
+      background:#fff;
+    }
+    .btn.primary{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#fff;
+    }
+    .btn.primary:hover{background:var(--accent2); border-color:var(--accent2)}
+    .btn:focus{outline:3px solid rgba(15,118,110,.25); outline-offset:2px}
+
+    main{padding:22px 0 34px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:16px;
+    }
+    .card h2{margin:0 0 10px; font-size:20px}
+    .card p{margin:10px 0; color:var(--muted)}
+    .list{margin:0; padding-left:18px; color:var(--muted)}
+
+    .kv{display:grid; grid-template-columns:1fr; gap:10px; margin:0;}
+    .kv div{
+      padding:10px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+    }
+    .kv strong{display:block; margin-bottom:4px}
+    .small{font-size:14px; color:var(--muted)}
+    footer{
+      border-top:1px solid var(--border);
+      padding:18px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .section-gap{margin-top:14px}
+
+    /* Compact pricing */
+    .pricing-wrap{margin-top:10px}
+    .pricing-title{margin:10px 0 8px}
+    .pricing-table{
+      width:100%;
+      border-collapse:collapse;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      overflow:hidden;
+      font-size:14px;
+    }
+    .pricing-table th, .pricing-table td{
+      padding:8px 10px;
+      border-bottom:1px solid var(--border);
+      text-align:left;
+      vertical-align:top;
+    }
+    .pricing-table th{background:#f3f4f6; font-weight:700}
+    .pricing-table tr:last-child td{border-bottom:none}
+    .pricing-note{margin:10px 0 0}
+    .addons{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin:10px 0 0; padding:0; list-style:none;
+    }
+    .addons li{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:14px;
+    }
+
+    /* Horizontal photo gallery (7 pics, swipe/scroll) */
+    .gallery{ margin-top:14px; }
+    .gallery-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .gallery-title{
+      margin:0;
+      font-size:20px;
+    }
+    .gallery-actions{ display:flex; gap:8px; }
+    .gbtn{
+      border:1px solid var(--border);
+      background:#fff;
+      border-radius:999px;
+      padding:8px 12px;
+      font-weight:700;
+      cursor:pointer;
+      line-height:1;
+    }
+    .gbtn:focus{outline:3px solid rgba(15,118,110,.25); outline-offset:2px}
+
+    .gallery-track{
+      display:flex;
+      gap:12px;
+      overflow-x:auto;
+      padding:10px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+    }
+    .gallery-track:focus{outline:3px solid rgba(15,118,110,.25); outline-offset:2px}
+
+    .gallery-track::-webkit-scrollbar{height:10px}
+    .gallery-track::-webkit-scrollbar-thumb{background:#d1d5db; border-radius:999px}
+    .gallery-track::-webkit-scrollbar-track{background:transparent}
+
+    .gitem{
+      flex:0 0 auto;
+      width:260px;
+      height:170px;
+      margin:0;
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid var(--border);
+      scroll-snap-align:start;
+      background:#f3f4f6;
+    }
+    @media (max-width: 520px){
+      .gitem{width:78vw; height:46vw; max-height:220px}
+    }
+    .gitem img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+  </style>
+
+  <!-- Local Business Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IKnead Massage",
+    "description": "IKnead Massage is a licensed massage spa serving the Pelham and Birmingham, Alabama area since 2014. We specialize in Swedish massage and deep tissue massage. Additional services, including hot stone therapy and table shower, are available upon request.",
+    "telephone": "+1-205-490-6338",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2015 Valleydale Road, Suite 1",
+      "addressLocality": "Pelham",
+      "addressRegion": "AL",
+      "postalCode": "35244",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "20:30" }
+    ],
+    "url": "https://example.com/"
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div>
+          <h1>IKnead Massage</h1>
+          <p class="tagline">
+            Licensed massage spa serving Pelham and Birmingham, Alabama since <strong>2014</strong>.
+            Specializing in <strong>Swedish</strong> and <strong>deep tissue</strong> massage.
+          </p>
+          <div class="cta" aria-label="Primary actions">
+            <a class="btn primary" href="tel:12054906338">Call to Book: (205) 490-6338</a>
+            <a class="btn" href="https://maps.app.goo.gl/GZZSarMHjJijvMyP8" target="_blank" rel="noopener">View Location</a>
+          </div>
+          <p class="small"><strong>Appointment only.</strong> Please call to schedule your appointment.</p>
+        </div>
+
+        <div class="card" style="min-width:280px">
+          <h2 style="margin-bottom:8px">Business Hours</h2>
+          <p style="margin:0"><strong>Sun:</strong> 12:00 PM – 8:30 PM</p>
+          <p style="margin:6px 0 0"><strong>Mon–Fri:</strong> 10:00 AM – 8:30 PM</p>
+          <p style="margin:6px 0 0"><strong>Sat:</strong> 12:00 PM – 8:30 PM</p>
+        </div>
+      </div>
+
+      <!-- NEW: 7-photo scrollable gallery -->
+      <section class="gallery" aria-label="Photo gallery">
+        <div class="gallery-top">
+          <h2 class="gallery-title">Gallery</h2>
+          <div class="gallery-actions" aria-label="Gallery controls">
+            <button class="gbtn" type="button" data-gscroll="-1" aria-label="Scroll left">‹</button>
+            <button class="gbtn" type="button" data-gscroll="1" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+
+        <div class="gallery-track" id="galleryTrack" tabindex="0" aria-label="Swipe or scroll to view photos">
+          <!-- Put these image files in the same folder as this HTML:
+               photo-1.jpg ... photo-7.jpg (or change the names below). -->
+          <figure class="gitem"><img src="photo-1.jpg" alt="IKnead Massage gallery photo 1" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-2.jpg" alt="IKnead Massage gallery photo 2" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-3.jpg" alt="IKnead Massage gallery photo 3" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-4.jpg" alt="IKnead Massage gallery photo 4" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-5.jpg" alt="IKnead Massage gallery photo 5" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-6.jpg" alt="IKnead Massage gallery photo 6" loading="lazy" width="900" height="600"></figure>
+          <figure class="gitem"><img src="photo-7.jpg" alt="IKnead Massage gallery photo 7" loading="lazy" width="900" height="600"></figure>
+        </div>
+
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <section class="card" aria-labelledby="about">
+          <h2 id="about">Business Description</h2>
+          <p>
+            IKnead Massage is a licensed massage spa serving the Pelham and Birmingham, Alabama area since 2014.
+            We specialize in Swedish massage and deep tissue massage, helping clients relieve pain, reduce stress,
+            and relax in a clean and professional environment.
+          </p>
+          <p>
+            Additional services, including <strong>hot stone therapy</strong> and <strong>table shower</strong>, are available upon request.
+          </p>
+
+          <div class="section-gap"></div>
+
+          <h2 class="pricing-title">Services & Prices</h2>
+          <div class="pricing-wrap">
+            <table class="pricing-table" aria-label="Massage prices">
+              <thead>
+                <tr>
+                  <th>Service</th>
+                  <th>30 min</th>
+                  <th>60 min</th>
+                  <th>90 min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Swedish Massage</strong></td>
+                  <td>$60</td>
+                  <td>$80</td>
+                  <td>$120</td>
+                </tr>
+                <tr>
+                  <td><strong>Deep Tissue Massage</strong></td>
+                  <td>$80</td>
+                  <td>$120</td>
+                  <td>$160</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="pricing-note"><strong>Add-Ons</strong></p>
+            <ul class="addons" aria-label="Add-ons">
+              <li>Table Shower — <strong>$20</strong></li>
+              <li>Hot Stone — <strong>$20</strong></li>
+            </ul>
+          </div>
+
+        </section>
+
+        <aside class="card" id="location" aria-labelledby="contact">
+          <h2 id="contact">Contact & Location</h2>
+          <dl class="kv">
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:12054906338">(205) 490-6338</a>
+              <div class="small">Call for appointment only</div>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <div class="small">
+                2015 Valleydale Road, Suite 1<br />
+                Pelham (Birmingham), AL 35244
+              </div>
+            </div>
+            <div>
+              <strong>Get Directions</strong>
+              <a class="btn" style="display:inline-block" target="_blank" rel="noopener"
+                 href="https://maps.app.goo.gl/GZZSarMHjJijvMyP8">
+                Open in Google Maps
+              </a>
+              <div class="small">Opens a new tab</div>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="y"></span> IKnead Massage. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Gallery buttons (scroll left/right)
+    (function () {
+      var track = document.getElementById("galleryTrack");
+      if (!track) return;
+
+      function scrollGallery(dir) {
+        var card = track.querySelector(".gitem");
+        var step = card ? (card.getBoundingClientRect().width + 12) : 280;
+        track.scrollBy({ left: dir * step * 2, behavior: "smooth" });
+      }
+
+      document.querySelectorAll("[data-gscroll]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          scrollGallery(parseInt(btn.getAttribute("data-gscroll"), 10) || 0);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
